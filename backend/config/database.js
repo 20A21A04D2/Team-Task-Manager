@@ -4,6 +4,10 @@ require('dotenv').config();
 
 let sequelize;
 
+console.log('Database environment diagnostic:');
+console.log('Available DB Keys:', Object.keys(process.env).filter(k => k.startsWith('MYSQL') || k.startsWith('DB_') || k.includes('URL')));
+
+
 if (process.env.DB_DIALECT === 'sqlite') {
   console.log('Connecting via SQLite...');
   sequelize = new Sequelize({
