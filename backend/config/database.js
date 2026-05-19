@@ -12,11 +12,12 @@ if (process.env.DB_DIALECT === 'sqlite') {
   });
 } else {
   sequelize = new Sequelize(
-    process.env.DB_NAME || 'team_task_manager',
-    process.env.DB_USER || 'root',
-    process.env.DB_PASSWORD || '',
+    process.env.DB_NAME || process.env.MYSQLDATABASE || 'team_task_manager',
+    process.env.DB_USER || process.env.MYSQLUSER || 'root',
+    process.env.DB_PASSWORD || process.env.MYSQLPASSWORD || '',
     {
-      host: process.env.DB_HOST || 'localhost',
+      host: process.env.DB_HOST || process.env.MYSQLHOST || 'localhost',
+      port: process.env.DB_PORT || process.env.MYSQLPORT || 3306,
       dialect: 'mysql',
       logging: false,
       pool: {
