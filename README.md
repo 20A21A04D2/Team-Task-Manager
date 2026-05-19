@@ -25,18 +25,6 @@ A secure, performance-optimized, and role-based SaaS project management platform
 
 ---
 
-## 🎨 User Interface Preview
-
-| Landing Page | Dashboard & Metrics |
-| :---: | :---: |
-| ![Landing Page](frontend/src/assets/hero.png) | *[Add Dashboard Screenshot here]* |
-
-| Kanban Board | Responsive Mobile View |
-| :---: | :---: |
-| *[Add Kanban Board Screenshot here]* | *[Add Mobile responsive Screenshot here]* |
-
----
-
 ## ✨ Features Matrix
 
 ### 🔐 Core Enterprise Features
@@ -205,16 +193,6 @@ Deployed using `@vercel/static-build` pointing to the `frontend/` directory.
 * **Bundle Optimization**: Code splitting and lazy loading of React routes via `Suspense` and `lazy` to keep initial load bundles small.
 * **Sequelize Connection Pooling**: Configured max/min connections and idle timeouts to optimize connection lifecycle and avoid MySQL connection exhaustion in serverless runtimes.
 * **Component Memoization**: Preventing unnecessary rerenders on complex dashboard charts using functional design patterns.
-
----
-
-## 👨‍💻 Developer Profile
-
-* **Name**: [Your Name]
-* **Role**: Full-Stack Engineer / React Developer
-* **GitHub**: [github.com/20A21A04D2](https://github.com/20A21A04D2)
-* **LinkedIn**: [linkedin.com/in/yourprofile](https://linkedin.com/in/yourprofile)
-* **Portfolio**: [yourportfolio.dev](https://yourportfolio.dev)
 
 ---
 
